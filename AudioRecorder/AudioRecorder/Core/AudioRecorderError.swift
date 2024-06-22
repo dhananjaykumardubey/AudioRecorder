@@ -10,4 +10,5 @@ import Foundation
 enum AudioRecorderError: Error {
     case fileInitialization(String)
     case audioSessionSetup(String)
+    case audioFormatSetup(String)
 }

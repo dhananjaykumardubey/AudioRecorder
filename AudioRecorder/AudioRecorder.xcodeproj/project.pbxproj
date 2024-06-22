@@ -12,6 +12,7 @@
 		1882E3BF2C270623003CF515 /* TimeInterval+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882E3BE2C270623003CF515 /* TimeInterval+Utilities.swift */; };
 		1882E3C12C27162B003CF515 /* AudioRecordingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882E3C02C27162B003CF515 /* AudioRecordingMock.swift */; };
 		1882E3C32C271645003CF515 /* AudioPlayingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882E3C22C271645003CF515 /* AudioPlayingMock.swift */; };
+		1882E3C52C272350003CF515 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1882E3C42C272350003CF515 /* AudioEngine.swift */; };
 		18F791FE2C266C48000030CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F791FD2C266C48000030CD /* AppDelegate.swift */; };
 		18F792002C266C48000030CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F791FF2C266C48000030CD /* SceneDelegate.swift */; };
 		18F792022C266C48000030CD /* AudioRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F792012C266C48000030CD /* AudioRecorderViewController.swift */; };
@@ -51,6 +52,7 @@
 		1882E3BE2C270623003CF515 /* TimeInterval+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Utilities.swift"; sourceTree = "<group>"; };
 		1882E3C02C27162B003CF515 /* AudioRecordingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingMock.swift; sourceTree = "<group>"; };
 		1882E3C22C271645003CF515 /* AudioPlayingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayingMock.swift; sourceTree = "<group>"; };
+		1882E3C42C272350003CF515 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
 		18F791FA2C266C48000030CD /* AudioRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F791FD2C266C48000030CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F791FF2C266C48000030CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				18F7922D2C2670D7000030CD /* AudioRecoder.swift */,
+				1882E3C42C272350003CF515 /* AudioEngine.swift */,
 				1882E3B82C26E8FD003CF515 /* AudioPlayer.swift */,
 				18F792322C267720000030CD /* AudioRecorderError.swift */,
 				18F792302C26733A000030CD /* AudioFileManager.swift */,
@@ -464,6 +467,7 @@
 			files = (
 				18F792022C266C48000030CD /* AudioRecorderViewController.swift in Sources */,
 				18F792332C267720000030CD /* AudioRecorderError.swift in Sources */,
+				1882E3C52C272350003CF515 /* AudioEngine.swift in Sources */,
 				18F791FE2C266C48000030CD /* AppDelegate.swift in Sources */,
 				1882E3B92C26E8FD003CF515 /* AudioPlayer.swift in Sources */,
 				18F792002C266C48000030CD /* SceneDelegate.swift in Sources */,

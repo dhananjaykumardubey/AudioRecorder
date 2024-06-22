@@ -186,7 +186,9 @@ class AudioRecorderViewController: UIViewController {
         
         viewModel.outputs.formattedCurrentTimeSubject
             .sink { [weak self] timeString in
-                self?.timerLabel.text = timeString
+                DispatchQueue.main.async {
+                    self?.timerLabel.text = timeString
+                }
             }
             .store(in: &cancellables)
         
