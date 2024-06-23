@@ -162,10 +162,6 @@ final class AudioEngine: NSObject, AudioRecording {
       let hwFormat = inputNode.outputFormat(forBus: 0)
       let audioSession = AVAudioSession.sharedInstance()
     var preferredSampleRate = audioSession.preferredSampleRate
-      
-      print("Preferred Sample Rate: \(preferredSampleRate)")
-      print("Hardware Input Format Sample Rate: \(hwFormat.sampleRate)")
-
       // Handle 0.0 preferred sample rate first
       if preferredSampleRate == 0.0 {
           preferredSampleRate = 48000.0

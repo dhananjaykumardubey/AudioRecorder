@@ -163,11 +163,11 @@
 		18F791FC2C266C48000030CD /* AudioRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				1882E3BD2C27060C003CF515 /* Utilities */,
-				1882E3BC2C26EDBD003CF515 /* Support */,
-				1882E3BB2C26EDAB003CF515 /* UI */,
 				18F7922F2C267325000030CD /* Core */,
 				18F7920B2C266C49000030CD /* Info.plist */,
+				1882E3BC2C26EDBD003CF515 /* Support */,
+				1882E3BB2C26EDAB003CF515 /* UI */,
+				1882E3BD2C27060C003CF515 /* Utilities */,
 			);
 			path = AudioRecorder;
 			sourceTree = "<group>";

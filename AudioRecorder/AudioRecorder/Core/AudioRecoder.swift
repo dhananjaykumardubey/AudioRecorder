@@ -233,7 +233,6 @@ final class AudioRecorder: NSObject, AudioRecording {
         self.timer = nil
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
             guard let self = self, let startTime = self.startTime else {
-                print("Self or startTime is nil.")
                 return
             }
             
@@ -242,12 +241,7 @@ final class AudioRecorder: NSObject, AudioRecording {
         }
         if let timer = timer {
             RunLoop.current.add(timer, forMode: .common)
-            print("Timer started.")
-        } else {
-            print("Timer creation failed.")
         }
-        print("Delegate: \(String(describing: delegate))")
-        print("startTime: \(String(describing: startTime))")
     }
     
     
@@ -255,7 +249,6 @@ final class AudioRecorder: NSObject, AudioRecording {
         timer?.invalidate()
         timer = nil
         self.pausedTime = 0
-        print("Timer stopped.")
     }
     
     private func pauseTimer() {
@@ -264,7 +257,6 @@ final class AudioRecorder: NSObject, AudioRecording {
         if let startTime = startTime {
             pausedTime += Date().timeIntervalSince(startTime)
         }
-        print("Timer Paused")
     }
     
     // Handles various errors that may occur during audio recording.
